@@ -1,0 +1,201 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+.container{
+	
+	width:100%;
+	display: grid;
+	grid-template-columns: 100%;
+	
+}
+.items{
+	
+	background-color: white;
+	
+}
+.header{
+	display: grid;
+	grid-template-columns:500px auto auto auto auto auto auto;
+	background-color: white;
+	padding-left: 100px;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 5px solid gray;
+
+}
+.header-items{
+	padding: 15px 50px 0px 50px;
+}
+.image2{
+	width:100%;
+}
+.main-text,text{
+	color:RGB(255, 179, 7);
+}
+h1,h3,h2{
+	text-align: center;
+	padding-bottom: 30px;
+}
+.content-item{
+	width:1200px;
+	height:800px;
+	margin: 0 auto;
+	background-color:white;
+	padding-top: 30px;
+	word-spacing: 7px;
+	
+}
+.section-container{
+	display: grid;
+	grid-template-columns: 33.3% 33.3% 33.4%;
+	
+	column-gap: 10px;
+}
+.second-section, .third-section{
+	display: grid;
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 100px auto;
+	width:1200px;
+    height:440px;
+	margin:0 auto;
+	column-gap: 5%;
+}
+.image{
+	height:250px;
+	border:4px solid white;
+	border-radius:0 25px	;	
+}
+.one{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	color:white
+}
+.second-section-container{
+	background-color:RGB(255, 179, 7) ;
+}
+.image1{
+	height:250px;
+	border:4px solid white;
+	border-radius:0 25px	;
+	width:250px;	
+}
+.one h2{
+	padding-top: 30px;
+	color:RGB(255, 179, 7);
+}
+.footer{
+	display: grid;
+	grid-template-columns:  auto auto auto;
+	width:1200px;
+    height:340px;
+	margin:0 auto;
+	column-gap: 5%;
+	padding-top: 20px;
+	background-color: #ffb30700;
+	grid-template-columns: 270px 540px 270px;
+	text-align: center;
+	overflow:hidden;
+	box-sizing: border-box;
+
+}
+.footer-container{
+	background-color: #ffb30761;
+	
+}
+input{
+	width:100%;
+	height:35px;
+	display: inline-block;
+	margin-top: 17px;
+	padding-left: 5px;
+	border: none;
+	border-radius: 5px;
+}
+.button{
+	width:250px;
+	border-radius: 5px;
+	background-color:RGB(255, 179, 7) ;
+}
+.footer-logo{
+	height:65px;
+}
+a{
+	text-decoration: none;
+	padding-top: 10px;
+	color:black;
+	font-size: 20px;
+	display: inline-block;
+}
+.footer-content{
+	padding-top: 15px;
+}
+.line{
+	color:RGB(255, 179, 7);
+	font-size: 40px;
+}
+hr {
+    display: inline-block;
+    margin-left: 960px;
+    margin-right: 960px;
+    margin-bottom: 50px;
+    padding: 3px;
+    background-color: RGB(255, 179, 7) ; 
+    border: 1px solid RGB(255, 179, 7) ;
+}
+.background{
+	margin:0px 0px 30px 326px;
+}
+.cycle{
+	animation-name:cyclist;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	position: absolute;
+	z-index:1;
+}
+.cycle img{
+	height:130px;
+
+}
+.car img{
+	height:210px;
+}
+.car{
+	position: absolute;
+	animation-name: vaahan;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+	
+}
+
+@keyframes cyclist{
+	from{
+		top:3000px;
+		left:-150px;
+	}
+	to{
+		top:3000px;
+		left:100%;
+	}
+}
+@keyframes vaahan{
+	from{
+		top:2970px;
+		left:-350px;
+	}
+	to{
+		top:2970px;
+		left:95%;
+	}
+}
+@media (min-width:1200px){
+	.header{
+		display: none;
+	}
+}
